@@ -1,10 +1,11 @@
 package com.example.kylesmith.herewestand
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuInflater
 import android.view.MenuItem
+import android.view.View
 
 open class MainActivity : AppCompatActivity() {
 
@@ -14,7 +15,6 @@ open class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        val menuInflater = menuInflater
         menuInflater.inflate(R.menu.main_menu, menu)
         return true
     }
@@ -28,5 +28,9 @@ open class MainActivity : AppCompatActivity() {
         return true
     }
 
+    fun navigateToNextScreen(view: View) {
+        val intent = Intent(this, SecondLondonBaptistConfession::class.java)
+        startActivity(intent)
+    }
 
 }
