@@ -35,6 +35,15 @@
             android:onClick="navigateToNextScreen"
             >
 
+            <ImageButton
+                android:id="@+id/london_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/second_london_baptist_confession_image"
+                android:src="@drawable/london"
+                />
+
+
             <TextView
                 android:id="@+id/info_text"
                 android:layout_width="wrap_content"
