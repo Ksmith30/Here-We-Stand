@@ -11,6 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/chapter_one_section_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chapter_one_section_one"
+            />
+
     </android.support.constraint.ConstraintLayout>
 
     <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
