@@ -1,23 +1,7 @@
 package com.example.kylesmith.herewestand
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.view.MenuItem
+import android.content.res.Resources.getSystem as res
 
-class SecondLondonBaptistConfession: AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second_london_baptist_confession)
-        supportActionBar!!.setHomeButtonEnabled(true)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            android.R.id.home -> {
-                this.finish()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
+data class SecondLondonBaptistConfession(val chapter: Int) {
+    var chapters : Array<String> = res().getStringArray(R.array.second_london_baptist_confession_chapter_1)
 }

@@ -60,7 +60,7 @@ open class MainActivity : AppCompatActivity() {
     }
 
     fun navigateToNextScreen(view: View) {
-        val intent = Intent(this, SecondLondonBaptistConfession::class.java)
+        val intent = Intent(this, SecondLondonBaptistConfessionView::class.java)
         startActivity(intent)
     }
 
