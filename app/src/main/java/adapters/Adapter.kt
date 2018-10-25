@@ -23,6 +23,7 @@ class MyAdapter(val myDataset: Array<String>) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.sectionNumber.text = (position + 1).toString()
         holder.sectionText.text = myDataset[position]
     }
 
